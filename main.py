@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('Abhinav profile')
+st.title('Abhinav Pandey')
 
 st.write("Introduction ")
 
