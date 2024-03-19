@@ -1,8 +1,9 @@
 import streamlit as st
 
 st.title('Abhinav Pandey')
+if(st.button("About")):
 
-st.info("Introduction")
+    st.text("Introduction")
 
 
 
