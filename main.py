@@ -14,8 +14,13 @@ st.subheader('Around 5+ years of relevant experience as a Web/Application Develo
              'Good Experience on Automation Testing using API Automation using Python and UI Automation '
              'Experienced with full software development life-cycle, architecting scalable platforms, object-oriented '
              'programming, database design and agile methodologies.')
-st.info("Involved in Analysis, Design, Coding, Modifications and Implementations of user requirements.")
+st.subheader("Involved in Analysis, Design, Coding, Modifications and Implementations of user requirements.")
 
 st.header('Technical skills')
 
 st.markdown('Web Frameworks = Django,Flask   \n   Web Technologies = Html,css  \n    Programming Language = Python  \nVersion Control = Git, GitHub  \n  Database = SQL, MongoDB, MySQL  \nIDEs/ Development Tool = Vs Code, PyCharm, Eclipse, Visual Studio, PyScripter  \nOperating Systems = Windows, Linux  \nTesting Tools = Postman, selenium  \nIssue Tracker = jira')
+from PIL import Image
+
+img = Image.open("streamlit.png")
+ 
+st.image(img, width=200)
