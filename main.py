@@ -100,7 +100,7 @@ if(st.button('Calculate BMI')):
 
 
 
-url = "https://x.com/avhinavpandey?t=mD4jyXZdeAQX6nP3BkETzQ&s=08"
+url =" https://x.com/avhinavpandey?t=0nlcvVnMqJJpUbq2QtXqWg&s=09"
 
 st.markdown(f'''
 <a href={url}><button style="background-color: blackYellow;">tweeter</button></a>
