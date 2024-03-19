@@ -1,7 +1,10 @@
 import streamlit as st
 
 st.title('Abhinav Pandey')
-st.text('click to know')
+
+
+st.info("Information")
+
 if(st.button("About")):
     #st.text("intro")
     st.markdown("To work with perseverance,measuring up to the expectation of the company and Interested to working team environment and contributing to the objectives of organization that offers a challenging and opportunity as a Python Developer.")
