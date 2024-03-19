@@ -6,19 +6,7 @@ if(st.button("About")):
 
 st.subheader("To work with perseverance,measuring up to the expectation of the company and Interested to workin team environment and contributing to the objectives of organization that offers a challenging and opportunity as a Python Developer.")
     
-st.subheader("Around 5+ years of relevant
-    experience as a Web/Application
-    Developer and coding with analytical programming using Python, Django. \n
-    Good Experience on Automation
-    Testing using API Automation 
-    using Python and UI Automation
-    Experienced with full software
-    development life-cycle, 
-    architecting 
-    scalable platforms, 
-    object-oriented programming,
-    database design and agile 
-    methodologies.")
+st.subheader("Around 5+ years of relevant experience as a Web/Application Developer and coding with analytical programming using Python, Django. Good Experience on Automation Testing using API Automation using Python and UI Automation Experienced with full software development life-cycle,architecting scalable platforms,object-oriented programming,database design and agile methodologies.")
 
 st.markdown("Involved in Analysis, Design, Coding, Modifications and Implementations of user requirements.")
 
