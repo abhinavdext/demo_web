@@ -103,7 +103,7 @@ if(st.button('Calculate BMI')):
 url ="https://google.com"
 
 st.markdown(f'''
-<a href={url}><button style="background-color: black;">tweeter</button></a>
+<a href={url}><button style="background-color: black;">twitter</button></a>
 ''',
 unsafe_allow_html=True)
 
