@@ -20,3 +20,5 @@ st.header('Technical skills')
 
 st.markdown('Web Frameworks = Django,Flask   \n   Web Technologies = Html,css  \n    Programming Language = Python  \nVersion Control = Git, GitHub  \n  Database = SQL, MongoDB, MySQL  \nIDEs/ Development Tool = Vs Code, PyCharm, Eclipse, Visual Studio, PyScripter  \nOperating Systems = Windows, Linux  \nTesting Tools = Postman, selenium  \nIssue Tracker = jira')
 
+if st.checkbox("Show/Hide")
+    st.text("Showing the widget")
