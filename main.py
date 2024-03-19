@@ -4,7 +4,7 @@ st.title('Abhinav Pandey')
 if(st.button("About")):
     st.text("intro")
 
-st.write("To work with perseverance, 
+st.subheader("To work with perseverance, 
     measuring up to the expectation of 
     the company and Interested to work
     in team environment and contributing
