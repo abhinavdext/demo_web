@@ -93,3 +93,22 @@ if(st.button('Calculate BMI')):
     elif(bmi >= 30):
 
         st.error("Extremely Overweight")
+
+
+########
+
+
+
+
+url =" https://goole.com"
+
+st.markdown(f'''
+<a href={url}><button style="background-color:GreenYellow;">Stackoverflow</button></a>
+''',
+unsafe_allow_html=True)
+
+
+
+
+
+
