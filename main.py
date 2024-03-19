@@ -2,7 +2,9 @@ import streamlit as st
 
 st.title('Abhinav Pandey')
 
-st.write("Introduction ")
+st.info("Introduction")
+
+
 
 st.header("To work with perseverance, measuring up to the expectation of the company and Interested to "
              "work in team environment and contributing "
@@ -12,6 +14,7 @@ st.subheader('Around 5+ years of relevant experience as a Web/Application Develo
              'Good Experience on Automation Testing using API Automation using Python and UI Automation '
              'Experienced with full software development life-cycle, architecting scalable platforms, object-oriented '
              'programming, database design and agile methodologies.')
+st.info("Involved in Analysis, Design, Coding, Modifications and Implementations of user requirements.")
 
 st.header('Technical skills')
 
