@@ -110,3 +110,24 @@ if(st.button('Calculate BMI')):
 
 st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>twitter</a>", unsafe_allow_html=True)
 
+
+
+import streamlit as st
+from streamlit_feedback import streamlit_feedback
+...
+def handle_feedback():  
+    st.write(st.session_state.fb_k)
+    st.toast("✔️ Feedback received!")
+if "df" in st.session_state:
+    if prompt := st.chat_input(placeholder=""):
+       ...
+       with st.form('form'):
+            streamlit_feedback(feedback_type="thumbs",
+                                optional_text_label="Enter your feedback here", 
+                                align="flex-start", 
+                                key='fb_k')
+            st.form_submit_button('Save feedback', on_click=handle_feedback)
+    
+
+
+
