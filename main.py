@@ -108,7 +108,7 @@ if(st.button('Calculate BMI')):
 
 
 
-st. write("<a href='#' id='my-link'>Click me</a>", unsafe_allow_html=True)
+st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>twitter</a>", unsafe_allow_html=True)
 
 
 
