@@ -110,5 +110,17 @@ if(st.button('Calculate BMI')):
 
 st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>twitter</a>", unsafe_allow_html=True)
 
+def streamlit_feedback(
+    feedback_type,
+    optional_text_label=None,
+    max_text_length=None,
+    disable_with_score=None,
+    on_submit=None,
+    args=(),
+    kwargs={},
+    align="flex-end",
+    key=None,
+):
+
 
 
