@@ -3,7 +3,7 @@ import streamlit as st
 st.title('Abhinav Pandey')
 
 
-st.info("Information")
+st.info("Introduction")
 #st.button("About", type="primary")
 if(st.button("About", type='primary')):
     #st.text("intro")
