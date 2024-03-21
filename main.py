@@ -3,7 +3,8 @@ import streamlit as st
 import datetime
 
 x = datetime.datetime.now()
-print(x)
+print('date and time = ',x)
+
 st.title('Abhinav Pandey')
 
 
