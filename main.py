@@ -100,5 +100,25 @@ if(st.button('Calculate BMI')):
 
 st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>twitter</a>", unsafe_allow_html=True)
 
-#######₹₹₹
+#######
+
+
+import pandas as pd
+from datetime import datetime
+import matplotlib.pyplot as plt
+from meteostat import Point, Monthly
+
+
+start = datetime(2022, 1, 1)
+end = datetime(2022, 12, 31)
+
+# Create Point for bxr,br
+tpr = Point( 25.5697373, 83.9712454
+
+# Get monthly data for 2022
+data = Monthly(tpr, start, end)
+data = data.fetch()
+
+
+
 
