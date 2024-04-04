@@ -102,3 +102,127 @@ st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09
 
 #######
 
+print('game')
+
+import random
+
+# Function to print the Tic-Tac-Toe board
+def print_board(board):
+    for row in board:
+        print(" | ".join(row))
+        print("-" * 5)
+
+# Function to check if the current board state is a win
+def check_win(board, player):
+    # Check rows, columns, and diagonals
+    for i in range(3):
+        if all([board[i][j] == player for j in range(3)]) or \
+           all([board[j][i] == player for j in range(3)]):
+            return True
+    if all([board[i][i] == player for i in range(3)]) or \
+       all([board[i][2 - i] == player for i in range(3)]):
+        return True
+    return False
+
+# Function to check if the board is full (tie)
+def check_tie(board):
+    for row in board:
+        for cell in row:
+            if cell == " ":
+                return False
+    return True
+
+# Function to get a list of available moves
+def available_moves(board):
+    moves = []
+    for i in range(3):
+        for j in range(3):
+            if board[i][j] == " ":
+                moves.append((i, j))
+    return moves
+
+# Function to evaluate the board state for the minimax algorithm
+def evaluate(board):
+    if check_win(board, "X"):
+        return 1
+    elif check_win(board, "O"):
+        return -1
+    elif check_tie(board):
+        return 0
+    else:
+        return None
+
+# Minimax algorithm implementation
+def minimax(board, depth, maximizing_player):
+    if depth == 0 or evaluate(board) is not None:
+        return evaluate(board)
+
+    if maximizing_player:
+        max_eval = float("-inf")
+        for move in available_moves(board):
+            board[move[0]][move[1]] = "X"
+            eval = minimax(board, depth - 1, False)
+            board[move[0]][move[1]] = " "
+            max_eval = max(max_eval, eval)
+        return max_eval
+    else:
+        min_eval = float("inf")
+        for move in available_moves(board):
+            board[move[0]][move[1]] = "O"
+            eval = minimax(board, depth - 1, True)
+            board[move[0]][move[1]] = " "
+            min_eval = min(min_eval, eval)
+        return min_eval
+
+# Function to make the AI's move using the minimax algorithm
+def ai_move(board):
+    best_move = None
+    best_eval = float("-inf")
+    for move in available_moves(board):
+        board[move[0]][move[1]] = "X"
+        eval = minimax(board, 9, False)
+        board[move[0]][move[1]] = " "
+        if eval > best_eval:
+            best_eval = eval
+            best_move = move
+    board[best_move[0]][best_move[1]] = "X"
+
+# Main function to run the game
+def main():
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    print("Welcome to Tic-Tac-Toe!")
+    print_board(board)
+
+    while True:
+        # Player's move
+        row, col = map(int, input("Enter row and column (0-2): ").split())
+        if board[row][col] != " ":
+            print("Invalid move. Try again.")
+            continue
+        board[row][col] = "O"
+        print_board(board)
+
+        # Check for player win or tie
+        if check_win(board, "O"):
+            print("Congratulations! You win!")
+            break
+        elif check_tie(board):
+            print("It's a tie!")
+            break
+
+        # AI's move
+        print("AI's move:")
+        ai_move(board)
+        print_board(board)
+
+        # Check for AI win or tie
+        if check_win(board, "X"):
+            print("AI wins! Better luck next time.")
+            break
+        elif check_tie(board):
+            print("It's a tie!")
+            break
+
+if __name__ == "__main__":
+    main()
+            
