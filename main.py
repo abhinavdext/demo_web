@@ -104,5 +104,4 @@ st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09
 
 st.text('game')
 
-st.markdown("BUTTU")
 
