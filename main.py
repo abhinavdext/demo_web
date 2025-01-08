@@ -114,6 +114,29 @@ if answer.lower()=='yes':
         print('correct')
     else:
         print('wrong answer :(')
+    
+    answer = input('Question 2: Do you follow any author on python? ')
+    if answer.lower()=='yes':
+        score+=1
+        print('correct')
+    else:
+        print('wrong answer :(')
+    
+    answer = input('Question 3: what is your favourite website for learning python?')
+    if answer.lower()=='abhinavpandey':
+        score+=1
+        print('correct')
+    else:
+        print('wrong answer :(')
+
+print('thank you for playing this game quiz, you attempted',score,"questions correctly!")
+mark=(score/total_questions)*100
+print('Marks obtained:', mark)
+print('BYE!')
+    
+
+
+
 
 
 
