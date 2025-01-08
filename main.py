@@ -102,6 +102,21 @@ st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09
 
 #######
 
-st.text('game')
+st.text('Welcome to quiz')
+answer = input('Ready to play the quiz? (yes/no) :')
+score = 0
+total_question = 3
+
+if answer.lower()=='yes':
+    answer = input('Question 1: what is you Favarate programming language?')
+    if answer.lower()=='python':
+        score+=1
+        print('correct')
+    else:
+        print('wrong answer :(')
+
+
+
+
 
 
