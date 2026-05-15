@@ -98,7 +98,7 @@ if(st.button('Calculate BMI')):
 
         st.error("Extremely Overweight")
 
-st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>X</a>", unsafe_allow_html=True)
+st. write("<a href='   https://x.com/avhinavpandey?t=3aU7VK3Zelqhewv9D1158w&s=09 ' id='my-link'>twitter</a>", unsafe_allow_html=True)
 st. write("<a href='   https://www.linkedin.com/in/abhinav-pandey-7272562b5?utm_source=share_via&utm_content=profile&utm_medium=member_android ' id='my-link'>LinkedIn</a>", unsafe_allow_html=True)
 
 #######
